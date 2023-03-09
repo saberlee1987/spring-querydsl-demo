@@ -17,9 +17,9 @@ public class Person {
     @Id
     @Column(name = "id")
     private Long id;
-    @Column(name = "firstName")
+    @Column(name = "firstname")
     private String firstName;
-    @Column(name = "lastName")
+    @Column(name = "lastname")
     private String lastName;
     @Column(name = "age")
     private Integer age;

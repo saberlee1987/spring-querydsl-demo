@@ -24,7 +24,14 @@ spring:
       minimum-idle: 5
       maximum-pool-size: 10
       max-lifetime: 10000
-
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
 
 
 management:
