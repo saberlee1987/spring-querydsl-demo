@@ -1,0 +1,34 @@
+server:
+  port: 9066
+  max-http-request-header-size: 756000
+  tomcat:
+    accesslog:
+      enabled: true
+    threads:
+      min-spare: 100
+      max: 3000
+    connection-timeout: 10000
+
+spring:
+  application:
+    name: spring-querydsl-demo
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test2
+    username: saber66
+    password: AdminSaber66
+    hikari:
+      connection-timeout: 10000
+      idle-timeout: 10000
+      minimum-idle: 5
+      maximum-pool-size: 10
+      max-lifetime: 10000
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
