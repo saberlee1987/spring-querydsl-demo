@@ -1,0 +1,30 @@
+jdbc.driver=oracle.jdbc.driver.OracleDriver
+jdbc.url=jdbc:oracle:thin:@192.168.100.121:1521/losdev
+jdbc.username=APP_CLT
+jdbc.password=App321
+jdbc.schema=CLT
+
+===============================================================
+CREATE DATABASE test2 CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE TABLE IF NOT EXISTS `test_table` (
+    `test_id` int(11) NOT NULL,
+    `test_text` text NOT NULL,
+    PRIMARY KEY (`test_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `person`
+(
+    id    int primary key not null auto_increment,
+    firstName varchar(70)     not null,
+    lastName varchar(90)     not null,
+    age int not null ,
+    email varchar(40) not null ,
+    nationalCode varchar(10) not null unique ,
+    mobile varchar(11) not null
+) ENGINE = InnoDB  DEFAULT CHARSET = utf8;
+
+create user 'saber66'@'localhost' identified by 'AdminSaber66';
+grant all privileges on test2.* to 'saber66'@'localhost' ;
+

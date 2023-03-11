@@ -24,4 +24,6 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
+*[git add proxy](https://stackoverflow.com/questions/34988038/git-clone-behind-corporate-proxy)
+*[git unset proxy](https://stackoverflow.com/questions/32268986/git-how-to-remove-proxy)
 

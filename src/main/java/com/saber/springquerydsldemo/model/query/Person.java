@@ -9,7 +9,7 @@ import lombok.Setter;
 import lombok.ToString;
 import java.util.Objects;
 @Entity
-@Table(name = "persons")
+@Table(name = "person")
 @Getter
 @Setter
 @ToString
@@ -17,9 +17,9 @@ public class Person {
     @Id
     @Column(name = "id")
     private Long id;
-    @Column(name = "firstname")
+    @Column(name = "firstName")
     private String firstName;
-    @Column(name = "lastname")
+    @Column(name = "lastName")
     private String lastName;
     @Column(name = "age")
     private Integer age;
