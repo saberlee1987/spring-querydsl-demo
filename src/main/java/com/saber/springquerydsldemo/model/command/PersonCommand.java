@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class PersonCommand {
-    private Long id;
+    private Integer id;
     private String firstName;
     private String lastName;
     private Integer age;
