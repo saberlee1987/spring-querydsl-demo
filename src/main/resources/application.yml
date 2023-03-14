@@ -14,7 +14,7 @@ spring:
     name: spring-querydsl-demo
 
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test2
     username: saber66
     password: AdminSaber66

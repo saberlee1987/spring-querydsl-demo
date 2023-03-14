@@ -16,7 +16,7 @@
     <properties>
         <java.version>17</java.version>
         <querydsl.version>5.0.0</querydsl.version>
-        <jdbc.driver>com.mysql.cj.jdbc.Driver</jdbc.driver>
+        <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
         <jdbc.url>jdbc:mysql://localhost:3306/test2</jdbc.url>
         <jdbc.username>saber66</jdbc.username>
         <jdbc.password>AdminSaber66</jdbc.password>
@@ -47,11 +47,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.mysql</groupId>-->
+<!--            <artifactId>mysql-connector-j</artifactId>-->
+<!--            <version>8.0.32</version>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <version>8.0.32</version>
-            <scope>runtime</scope>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.24</version>
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>com.mysql</groupId>-->
@@ -154,6 +159,7 @@
                     <jdbcUser>${jdbc.username}</jdbcUser>
                     <jdbcPassword>${jdbc.password}</jdbcPassword>
                     <schemaPattern>${jdbc.schema}</schemaPattern>
+                    <schemaToPackage>true</schemaToPackage>
                     <packageName>com.saber.springquerydsldemo.model.command</packageName>
                     <beanPackageName>com.saber.springquerydsldemo.model.command.</beanPackageName>
                     <targetFolder>target/generated-sources/sql</targetFolder>
@@ -168,11 +174,16 @@
                 </configuration>
                 <dependencies>
                     <dependency>
-                        <groupId>com.mysql</groupId>
-                        <artifactId>mysql-connector-j</artifactId>
-                        <version>8.0.32</version>
-                        <scope>runtime</scope>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>8.0.24</version>
                     </dependency>
+<!--                    <dependency>-->
+<!--                        <groupId>com.mysql</groupId>-->
+<!--                        <artifactId>mysql-connector-j</artifactId>-->
+<!--                        <version>8.0.32</version>-->
+<!--                        <scope>runtime</scope>-->
+<!--                    </dependency>-->
 <!--                    <dependency>-->
 <!--                        <groupId>com.oracle</groupId>-->
 <!--                        <artifactId>ojdbc8</artifactId>-->

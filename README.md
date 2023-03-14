@@ -26,4 +26,5 @@ The following guides illustrate how to use some features concretely:
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
 *[git add proxy](https://stackoverflow.com/questions/34988038/git-clone-behind-corporate-proxy)
 *[git unset proxy](https://stackoverflow.com/questions/32268986/git-how-to-remove-proxy)
+* [querydsl help](https://querydsl.com/static/querydsl/latest/reference/html/ch02s03.html)
 
